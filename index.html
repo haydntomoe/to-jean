@@ -57,7 +57,6 @@
         display: none;
     }
 
-    /* Confetti */
     .confetti {
         position: fixed;
         width: 8px;
@@ -83,7 +82,11 @@
 
     <p>
         i just wanted to ask if you'd be interested in going out with me sometime.
-        just something simple like hanging out or eat sum snaks ^^, whenever you're free.
+        just something simple like hanging out or eat sum snaks ^^
+        
+        whenever you're free.
+
+        
         (TRA NA SUMAMA KA PLEASE)
     </p>
 
@@ -132,11 +135,11 @@ function noClick() {
     const noBtn = document.getElementById("noBtn");
     const area = document.getElementById("btnArea");
 
-    const maxX = area.clientWidth - 500;
-    const maxY = area.clientHeight - 150;
+    const X = Math.random() * window.innerWidth;
+    const Y = Math.random() * window.innerHeight;
 
-    noBtn.style.left = Math.random() * maxX + "px";
-    noBtn.style.top = Math.random() * maxY + "px";
+    noBtn.style.left = Math.random() * X + "px";
+    noBtn.style.top = Math.random() * Y + "px";
 
     if (noCount == 1) {
         alert("anong no ka d'yan, click yes na hays");
