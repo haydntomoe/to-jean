@@ -25,6 +25,7 @@
         text-align: center;
         max-width: 400px;
         position: relative;
+        overflow: visible;
         z-index: 2;
     }
 
@@ -94,10 +95,9 @@
     <p>
         i just wanted to ask if you'd be interested in going out with me sometime. 
         just something simple like hanging out or eat sum snaks ^^</p>
-    <p>  
-        whenever you're free. </p>
+    
     <p> 
-        (TRA NA SUMAMA KA PLEASE) </p>
+        (TRA NA SUMAMA KA PLEASE SAPILITAN 'TO!) </p>
 
     <p>no pressure but press YES!😠</p>
 
@@ -144,8 +144,8 @@ function noClick() {
     const noBtn = document.getElementById("noBtn");
     const area = document.getElementById("btnArea");
 
-    const X = Math.random() * window.innerWidth;
-    const Y = Math.random() * window.innerHeight;
+    const X = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+    const Y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
 
     noBtn.style.left = Math.random() * X + "px";
     noBtn.style.top = Math.random() * Y + "px";
